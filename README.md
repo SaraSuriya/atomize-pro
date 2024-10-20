@@ -22,12 +22,23 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 1. Clone this repo.
 
 ```git clone https://github.com/SaraSuriya/atomize-pro.git```
-``` cd atomize-pro ```
 
-2. Install dependencies.
+```cd atomize-pro```
 
-\\\ cd client \\\
-\\\ npm i \\\
-\\\ .. \\\
-\\\ cd server \\\
-\\\ npm i \\\
+2. Install dependencies in the client folder.
+
+```cd client```
+```npm i```
+
+3. Install dependencies in the server.
+
+```..```
+```cd server```
+```npm i```
+
+4. Create an .env file and fill out the following.
+
+```PSQL_DATABASE=database-name-here
+PSQL_USER=name-here
+PASSWORD=password-here
+PORT=3000```
