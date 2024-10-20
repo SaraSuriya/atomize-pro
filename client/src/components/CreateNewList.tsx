@@ -52,9 +52,9 @@ export default function CreateNewList() {
 
   return (
     <>
-      <div className="new-list-container h-[500px] py-[20px] px-[50px] mt-[12px] ml-[50px] rounded-[40px] text-center">
+      <div className="new-list-container h-[580px] py-[10px] px-[50px] ml-[50px] mr-[30px] rounded-[40px] justify-center flex text-center overflow-y-auto w-[400px]">
         <form id="create-new-list" onSubmit={handleSubmit(onSubmit)}>
-          <span className="form-text">NAME YOUR LIST:</span>
+          <span className="text-[white] text-[13px] mt-[15px]">NAME YOUR LIST:</span>
           <input
             type="text"
             id="name-your-list"
@@ -62,8 +62,8 @@ export default function CreateNewList() {
           />
           {errors.listName && <p>{errors.listName.message}</p>}
 
-          <span className="form-text">CHOOSE TEMPLATE:</span>
-          <div className="template-options">
+          <span className="text-[white] text-[13px] mt-[15px] ">CHOOSE TEMPLATE:</span>
+          <div className="template-options overflow-y-auto">
             {listTypes.map((type) => (
               <span
                 key={type}
@@ -81,7 +81,7 @@ export default function CreateNewList() {
           </div>
           {errors.template && <p>Please choose a template</p>}
 
-          <span className="form-text">ADD TO:</span>
+          <span className="text-[white] text-[13px] mt-[5px]">ADD TO:</span>
           <div className="chosen-tab">
             {tabs.length > 0 ? (
               tabs.map((tab) => {
@@ -93,7 +93,7 @@ export default function CreateNewList() {
                   <img
                     key={tab.id}
                     src={`/icons/${tab.icon_name}`}
-                    className={`text-3xl h-[33px] cursor-pointer mx-5 hover:scale-[1.2] ${
+                    className={`text-xl h-[33px] cursor-pointer mx-5 hover:scale-[1.2] ${
                       selectedTab === tab.id ? "chosen-tab-selected" : ""
                     }`}
                     onClick={() => handleSelectTab(tab.id as number)}
@@ -112,15 +112,14 @@ export default function CreateNewList() {
             {...register("selectedTab", { required: true })}
           />
 
-          <button id="add-goals-to-list" type="submit">
+          <button className="bg-[#473cd6] m-auto text-[#e8ff79] px-[18px]" type="submit">
             Add Goal Data &rarr;
           </button>
         </form>
       </div>
-
-      <div className="preview-list-container">
-        <div className="preview-items">
-          {hoveredTemplate === "Simple List" && (
+      <div className="preview-list-container mt-[30px] w-[640px]">
+        <div className="flex flex-col justify-center m-auto w-[100%]">
+          {hoveredTemplate === "Simple List" && selectedTab === null && (
             <>
               <div className="preview-text-wrap">
                 <PreviewVideo video={SimpleListVideo} />
@@ -133,7 +132,7 @@ export default function CreateNewList() {
               </span>
             </>
           )}
-          {hoveredTemplate === "Progress Bar" && (
+          {hoveredTemplate === "Progress Bar"  && selectedTab === null && (
             <>
               <div className="preview-text-wrap">
                 <PreviewVideo video={ProgressBarVideo} />
@@ -145,7 +144,7 @@ export default function CreateNewList() {
               </span>
             </>
           )}
-          {hoveredTemplate === "Levels" && (
+          {hoveredTemplate === "Levels"  && selectedTab === null && (
             <>
               <div className="preview-text-wrap">
                 <PreviewVideo video={LevelsVideo} />A three-level progress
@@ -158,7 +157,7 @@ export default function CreateNewList() {
               </span>
             </>
           )}
-          {hoveredTemplate === "Sets" && (
+          {hoveredTemplate === "Sets"  && selectedTab === null && (
             <>
               <div className="preview-text-wrap">
                 <PreviewVideo video={SetsVideo} />
@@ -169,6 +168,11 @@ export default function CreateNewList() {
                 habit-building.
               </span>
             </>
+          )}
+          {hoveredTemplate === "Mixed"  && selectedTab === null && (
+              <div className="preview-text-wrap">
+                Coming Soon!
+              </div>
           )}
         </div>
       </div>

@@ -125,7 +125,7 @@ export default function AddSomeGoals() {
   };
 
   return (
-    <>
+    <div className="flex flex-row justify-between">
       <form onSubmit={handleSubmit(onSubmit)} className="add-goals">
         <div className="add-some-goals-container">
           <div id="list-title">{listName}</div>
@@ -161,14 +161,14 @@ export default function AddSomeGoals() {
             />
           ) : null}
         </div>
-        <button
-          className="create-list-goals-button"
+      </form>
+      <button
+          className="create-list-goals-button h-[150px]"
           id="submit-list-goals"
           type="submit"
         >
           Create List &rarr;
         </button>
-      </form>
-    </>
+    </div>
   );
 }
