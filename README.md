@@ -4,11 +4,16 @@ Atomize Productivity (also known as 'Atomize Pro') is a productivity app designe
  
 The front-end is built with vanilla Javascript, CSS, and React, but with improvements, will include features supported by libraries such as Dnd Kit. On the back-end, Express keeps the server afloat and a PostGresql database holds all the user's stored data and preferences.
 
- 
+
 ## Current Features
 
-### Goal Creation:
-Choose from four different templates to track your goal and your day's progress: 1) A check-list for simplicity and black-and-white outcomes, 2) A progress bar for meeting a specific number of units, 3) Sets for tracking repetitions of activities, and 4) A three-level block for measuring progress in stages.
+### Measure progress in four different ways:
+Choose from four different templates to track your goal and your day's progress: 
+
+1) A check-list for simplicity and black-and-white outcomes
+2) A progress bar for meeting a specific number of units
+3) Sets for tracking repetitions of activities
+4) A three-level block for measuring progress in stages
   
 ### Set List Categories with Tabs:
 Keep your goals organized in lists and stored under customized tabs for easy navigation and overwhelm prevention.
@@ -65,3 +70,9 @@ In the server folder, enter the following into the terminal.
 Exit the server folder and return to the client folder. Run the client by entering the following into the terminal.
 
 ```npm run dev```
+
+## Tech Stack
+
+- React
+- PostGreSQL
+- Express.js
