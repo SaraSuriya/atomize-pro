@@ -46,8 +46,11 @@ Exit the client folder and enter the server folder, then install dependencies.
 Create an .env file in the server folder. Paste the following and enter the relevant information.
 
 ```PSQL_DATABASE=database-name-here```
+
 ```PSQL_USER=name-here```
+
 ```PASSWORD=password-here```
+
 ```PORT=3000```
 
 ### 5. Connect to the database.
