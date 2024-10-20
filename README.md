@@ -28,12 +28,15 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 2. Install dependencies in the client folder.
 
 ```cd client```
+
 ```npm i```
 
 3. Install dependencies in the server.
 
 ```..```
+
 ```cd server```
+
 ```npm i```
 
 4. Create an .env file and fill out the following.
