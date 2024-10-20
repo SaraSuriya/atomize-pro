@@ -7,7 +7,7 @@ The front-end is built with vanilla Javascript, CSS, and React, but with improve
 
 ## Current Features
 
-### Measure progress in four different ways:
+### Measure Progress in Four Different Ways:
 Choose from four different templates to track your goal and your day's progress: 
 
 1) A check-list for simplicity and black-and-white outcomes
@@ -18,7 +18,7 @@ Choose from four different templates to track your goal and your day's progress:
 ### Set List Categories with Tabs:
 Keep your goals organized in lists and stored under customized tabs for easy navigation and overwhelm prevention.
 
-### An Aesthetically Pleasing Interface:
+### A Visually Appealing Interface
 Interact with an interface that is pleasant to navigate and look at. Life is not an office and so it shouldn't feel like one when you're planning your next steps.
 
 
@@ -70,6 +70,7 @@ In the server folder, enter the following into the terminal.
 Exit the server folder and return to the client folder. Run the client by entering the following into the terminal.
 
 ```npm run dev```
+
 
 ## Tech Stack
 
