@@ -20,18 +20,21 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 ## Installation
 
 ### 1. Clone this repo.
+Clone this repo by copying this into your terminal.
 
 ```git clone https://github.com/SaraSuriya/atomize-pro.git```
 
 ```cd atomize-pro```
 
 ### 2. Install dependencies in the client folder.
+Enter the client folder and install dependencies.
 
 ```cd client```
 
 ```npm i```
 
 ### 3. Install dependencies in the server.
+Exit the client folder and enter the server folder, then install dependencies.
 
 ```..```
 
@@ -39,7 +42,8 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 
 ```npm i```
 
-### 4. Create an .env file and fill out the following.
+### 4. Create an .env file.
+Create an .env file in the server folder. Paste the following and enter the relevant information.
 
 ```PSQL_DATABASE=database-name-here```
 ```PSQL_USER=name-here```
@@ -47,11 +51,14 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 ```PORT=3000```
 
 ### 5. Connect to the database.
+Connect to the PostGreSQL database.
 
 ### 6. Run the server.
+In the server folder, enter the following into the terminal.
 
 ```npm run dev```
 
 ### 7. Run the client.
+Exit the server folder and return to the client folder. Run the client by entering the following into the terminal.
 
 ```npm run dev```
