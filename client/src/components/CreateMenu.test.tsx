@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import CreateNew from "./CreateNew";
+import CreateNew from "./CreateMenu";
 import { describe, it, expect } from "vitest";
 
 describe("CreateNew component", () => {

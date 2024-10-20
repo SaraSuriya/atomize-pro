@@ -2,7 +2,7 @@ import { useEffect, useReducer } from "react";
 import { initialState, reducer } from "./store/reducer.js";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.js";
-import CreateNew from "./components/CreateNew.js";
+import CreateNew from "./components/CreateMenu.js";
 import CreateNewList from "./components/CreateNewList.js";
 import CreateNewTab from "./components/CreateNewTab.js";
 import CreateNewGoal from "./components/CreateNewGoal.js";
@@ -69,13 +69,6 @@ function App() {
   useEffect(() => {
     loadData();
   }, []);
-
-  // // If there are any goals, calculates the goal XP and updates the centralised state.
-  // useEffect(() => {
-  //   if (goals.length > 0) {
-  //     dispatch({ type: "CALCULATE_GOAL_XP", payload: goals });
-  //   }
-  // }, [goals, dispatch]);
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>

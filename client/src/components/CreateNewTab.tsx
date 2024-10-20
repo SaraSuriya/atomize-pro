@@ -83,7 +83,7 @@ export default function CreateNewTab() {
   };
 
   return (
-    <div className="new-tab-container">
+    <div className="new-tab-container w-[250px] m-auto">
       <form onSubmit={handleSubmit(onSubmit)}>
         <span className="create-tab-text">Name your tab</span>
         <input

@@ -55,11 +55,10 @@
   grid-template-columns: repeat(12, [col-start] 1fr);
 }
 
+/*/ NavBar.tsx /*/
 .nav-container {
   grid-column: col-start 1 / -1;
   grid-row: 1;
-  margin: -8px -8px 40px -8px;
-  padding: 13px 24px;
   background: linear-gradient(
     39deg,
     rgba(41, 34, 184, 1) 0%,
@@ -72,7 +71,6 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
-  z-index: 8;
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
@@ -117,12 +115,12 @@
   padding: 0px 30px;
 }
 
+/*/ CreateNewTab.tsx /*/
 .new-tab-container {
   grid-column: col-start 5 / span 4;
   grid-row: 3 / span 3;
   padding: 50px 80px;
   border-radius: 220px;
-  width: 250px;
   border: 2px solid transparent;
   background: linear-gradient(
     28deg,
@@ -130,7 +128,6 @@
     rgba(255, 231, 87, 1) 100%
   );
   border: 2px solid #e8ff79;
-  margin: auto;
 }
 
 .all-lists-container {

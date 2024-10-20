@@ -2,7 +2,6 @@ import { useState } from "react";
 import Delete from "../assets/other/delete-button.png";
 import Edit from "../assets/other/edit-button.png";
 import { deleteTab, deleteGoal } from "../ApiService.js";
-import "../styles/MakeEdits.css";
 import { useAppContext } from "../AppContext.js";
 import { Action, State, Tab } from "../types/types.js";
 import { Goal } from "../types/types.js";
@@ -142,24 +141,24 @@ export default function MakeEdits() {
     : [];
 
   return (
-    <div className="edit-container flex flex-col w-[900px] h-[400px] m-[40px] p-[30px] text-center justify-center rounded-[45px] text-sm text-[orange]">
-      <div className="all-data-box">
-        <div className="all-stored-items-box">
+    <div className="edit-container flex flex-col w-[900px] h-[400px] m-[40px] px-[30px] py-[50px] text-center justify-center rounded-[45px] text-sm text-[orange]">
+      <div className="flex flex-row justify-between m-[20px]">
+        <div className="w-[260px] h-[280px] text-center rounded-[10px] text-[white] border overflow-auto border-solid border-[#E8FF79]">
           <div className="all-tabs">
             {tabs.map((tab) => (
               <div
                 key={tab.name}
-                className={`selector-box ${
-                  tab === selectedTab ? "item-chosen" : ""
+                className={`flex flex-row justify-center cursor-pointer pl-[18px] pr-[25px] py-[18px] hover:bg-[#90eebd] hover:text-[#533dc9] ${
+                  tab === selectedTab ? "bg-[#90eebd] text-[#533dc9]" : ""
                 }`}
                 onClick={() => handleSelectObject("Tab", tab)}
               >
                 <img
                   src={`/icons/${tab.icon_name}`}
-                  className="tab-selector-icon"
+                  className="w-5 mr-2.5"
                   alt={tab.name}
                 />
-                <span className="selector-text">{tab.name}</span>
+                <span className="text-base">{tab.name}</span>
               </div>
             ))}
           </div>
@@ -170,12 +169,12 @@ export default function MakeEdits() {
           {uniqueLists.map((list) => (
             <div
               key={list}
-              className={`selector-box ${
-                list === selectedList ? "item-chosen" : ""
+              className={`flex flex-row justify-center cursor-pointer pl-[18px] pr-[25px] py-[18px] hover:bg-[#90eebd] hover:text-[#533dc9] ${
+                list === selectedList ? "bg-[#90eebd] text-[#533dc9]" : ""
               }`}
               onClick={() => handleSelectObject("List", list)}
             >
-              <span className="selector-text">{list}</span>
+              <span className="text-base">{list}</span>
             </div>
           ))}
         </div>
@@ -187,30 +186,30 @@ export default function MakeEdits() {
             .map((goal) => (
               <div
                 key={goal.id}
-                className={`selector-box ${
-                  goal === selectedGoal ? "item-chosen" : ""
+                className={`flex flex-row justify-center cursor-pointer pl-[18px] pr-[25px] py-[18px] hover:bg-[#90eebd] hover:text-[#533dc9] ${
+                  goal === selectedGoal ? "bg-[#90eebd] text-[#533dc9]" : ""
                 }`}
                 onClick={() => handleSelectObject("Goal", goal)}
               >
-                <span className="selector-text">{goal.task_name}</span>
+                <span className="text-base">{goal.task_name}</span>
               </div>
             ))}
         </div>
       </div>
       {/* Edit Options */}
-      <div className="edit-options">
+      <div className="flex flex-row justify-around">
         <div className="selected-obj-info">
-          <span id="selected-obj-name">
+          <span className="text-[rgb(255,207,119)]">
             SELECTED: {selectedList ? selectedList : ""}
           </span>
         </div>
         <div className="edit-buttons">
-          <button className="edit-item">
-            <img src={Edit} className="action-icon" alt="Edit" />
+          <button className="w-[60px] text-[11px] mx-[5px] my-0 p-2">
+            <img src={Edit} className="h-10 mb-[5px]" alt="Edit" />
             EDIT
           </button>
-          <button className="edit-item" onClick={handleDelete}>
-            <img src={Delete} className="action-icon" alt="Delete" />
+          <button className="w-[60px] text-[11px] mx-[5px] my-0 p-2" onClick={handleDelete}>
+            <img src={Delete} className="h-10 mb-[5px]" alt="Delete" />
             DELETE
           </button>
         </div>

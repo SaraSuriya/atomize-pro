@@ -51,7 +51,7 @@ export default function Tab() {
     <>
       {!isLoading && (
         <>
-          <h2 className="tab-header">⸻ {tab.name} ⸻</h2>
+          <h2 className="tab-header block">⸻ {tab.name} ⸻</h2>
           {tabLists && tabLists.length > 0 ? (
             <div className="all-lists-container">
               {tabLists.map((list) => (

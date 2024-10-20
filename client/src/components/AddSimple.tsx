@@ -1,4 +1,4 @@
-//! Doesn't need TSX as it's a non-functioning component -- See Sara's message in group chat
+
 export default function AddSimple() {
   return (
     <>

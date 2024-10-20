@@ -93,7 +93,7 @@ export default function CreateNewList() {
                   <img
                     key={tab.id}
                     src={`/icons/${tab.icon_name}`}
-                    className={`nav-icon ${
+                    className={`text-3xl h-[33px] cursor-pointer mx-5 hover:scale-[1.2] ${
                       selectedTab === tab.id ? "chosen-tab-selected" : ""
                     }`}
                     onClick={() => handleSelectTab(tab.id as number)}
