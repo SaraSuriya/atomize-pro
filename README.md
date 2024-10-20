@@ -1,4 +1,4 @@
-## Atomize Pro. 
+# Atomize Pro. 
 
 Atomize Productivity (also known as 'Atomize Pro') is a productivity app designed to elevate the way you track goals and manage progress across all areas of life. Whether you're focusing on short-term tasks or long-term objectives, Atomize Pro helps you monitor and measure progress through diverse methods -- not just traditional checkboxes -- making your journey toward success more dynamic and engaging.
  
