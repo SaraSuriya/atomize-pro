@@ -15,3 +15,19 @@ Keep your goals organized in lists and stored under customized tabs for easy nav
 
 ### An Aesthetically Pleasing Interface:
 Interact with an interface that is pleasant to navigate and look at. Life is not an office and so it shouldn't feel like one when you're planning your next steps.
+
+
+## Installation
+
+1. Clone this repo.
+
+\\\ git clone https://github.com/SaraSuriya/atomize-pro.git \\\
+\\\ cd atomize-pro \\\
+
+2. Install dependencies.
+
+\\\ cd client \\\
+\\\ npm i \\\
+\\\ .. \\\
+\\\ cd server \\\
+\\\ npm i \\\
