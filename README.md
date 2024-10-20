@@ -21,8 +21,8 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 
 1. Clone this repo.
 
-\\\ git clone https://github.com/SaraSuriya/atomize-pro.git \\\
-\\\ cd atomize-pro \\\
+```git clone https://github.com/SaraSuriya/atomize-pro.git```
+``` cd atomize-pro ```
 
 2. Install dependencies.
 
