@@ -7,7 +7,7 @@ import Tab from "../assets/other/tab.png";
 
 export default function CreateNew() {
   return (
-    <div className="create-container">
+    <div className="create-container w-[700px] h-[310px] m-[40px] p-[30px] text-center justify-center rounded-[45px] text-[#f1a817]">
       <p id="create-question">CREATE A NEW...</p>
       <div className="createChoices">
         <Link to="/create-new/goal">

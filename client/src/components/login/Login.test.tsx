@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { useAuth } from "../context/authContext"; // Adjust the path to your authContext
+import { useAuth } from "../../context/authContext"; // Adjust the path to your authContext
 import { useNavigate } from "react-router-dom";
-import Login from "../components/Login"; // Adjust the path to your Login component
+import Login from "./Login"; // Adjust the path to your Login component
 
 // Mock useAuth and useNavigate hooks
 vi.mock("../context/authContext", () => ({

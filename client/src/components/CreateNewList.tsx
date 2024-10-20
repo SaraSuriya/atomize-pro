@@ -52,7 +52,7 @@ export default function CreateNewList() {
 
   return (
     <>
-      <div className="new-list-container">
+      <div className="new-list-container h-[500px] py-[20px] px-[50px] mt-[12px] ml-[50px] rounded-[40px] text-center">
         <form id="create-new-list" onSubmit={handleSubmit(onSubmit)}>
           <span className="form-text">NAME YOUR LIST:</span>
           <input

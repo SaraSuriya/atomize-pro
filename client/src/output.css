@@ -5,15 +5,14 @@
   --yellow-gradient: linear-gradient(135deg, #fbd786, #f7797d);
   --simple-red-bg: #f13647;
   --simple-red-border: #fd5665 #e82839 #e82839 #fd5665;
-
   --simple-purple-bg: #5b33bf;
   --simple-purple-border: #673cd4 #5530af #5530af #673cd4;
-
   --simple-orange-bg: #ff6c02;
   --simple-orange-border: #ff7f38 #e86100 #e86100 #ff7f38;
 }
 
 /* Apply Variables to Classes */
+
 .simple-red {
   background-color: var(--simple-red-bg);
   border-color: var(--simple-red-border);
@@ -77,6 +76,7 @@
 }
 
 /*/ CreateNew.tsx /*/
+
 .create-container {
   grid-column: col-start 5 / span 4;
   grid-row: 2 / span 5;
@@ -93,6 +93,7 @@
 }
 
 /*/ CreateNewList.tsx /*/
+
 .new-list-container {
   grid-column: col-start 1 / span 4;
   grid-row: 2 / span 8;
@@ -166,6 +167,7 @@ th {
 }
 
 /*/ MakeEdits.tsx /*/
+
 .edit-container {
   grid-column: col-start 5 / span 4;
   grid-row: 2 / span 5;
@@ -200,6 +202,7 @@ th {
 }
 
 /*/ CreateNewGoal.tsx /*/
+
 .new-goal-container {
   grid-column: col-start 5 / span 4;
   grid-row: 2 / span 4;
@@ -212,11 +215,13 @@ th {
 }
 
 /* Media query for mobile */
+
 @media (max-width: 768px) {
   .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Ensures that child elements take full width */
+    align-items: stretch;
+    /* Ensures that child elements take full width */
     width: 100%;
   }
 

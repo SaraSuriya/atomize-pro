@@ -142,7 +142,7 @@ export default function MakeEdits() {
     : [];
 
   return (
-    <div className="edit-container">
+    <div className="edit-container flex flex-col w-[900px] h-[400px] m-[40px] p-[30px] text-center justify-center rounded-[45px] text-sm text-[orange]">
       <div className="all-data-box">
         <div className="all-stored-items-box">
           <div className="all-tabs">

@@ -52,7 +52,7 @@ export default function NavBar() {
               return null;
             })}
         </div>
-        <div className={`${tabs.length ? "categories" : null}`}>
+        <div className="actions">
           <Link to="/create-new">
             <img src={CreateButton} alt="Create New" className="nav-icon" />
           </Link>

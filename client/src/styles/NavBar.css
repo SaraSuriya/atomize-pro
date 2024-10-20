@@ -16,6 +16,7 @@
 .actions {
     border-left: 1px solid #E8FF79;
     border-right: 1px solid #E8FF79;
+    width: 350px;
 }
 
 .categories {
@@ -29,23 +30,23 @@
     text-align: center;
     font-size: 15px;
     color: white;
-    padding: 0px 65px;
+    padding: 0px 40px;
+    width: 480px;
     text-transform: uppercase;
     height: 33px;
-    border-left: 1px solid #E8FF79;
-    border-right: 1px solid #E8FF79;
+    /* border-left: 1px solid #E8FF79;
+    border-right: 1px solid #E8FF79; */
     display: flex;
     align-items: center;
-    margin-left: 30px; /*/delete later/*/
   }
 
 #nav-completion-bar-box {
-    margin: -10px 0px -10px 50px;
+    margin: -10px 0px -10px 30px;
 }
 
 #nav-completion-bar {
     height: 28px;
-    width: 380px;
+    width: 350px;
 }
 
 .hover-text {

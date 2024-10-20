@@ -51,7 +51,7 @@ export default function CreateNewGoal({ tabs }) {
   ];
 
   return (
-    <div className="new-goal-container">
+    <div className="new-goal-container text-center text-[#e8ff79] rounded-[45px] w-[500px] h-[450px] py-[30px]">
       <form>
         <div className="list-tab-details">
           <div className="left-col-create">
