@@ -1,4 +1,5 @@
-import express from "express";
+const express = require("express");
+
 import cors from "cors";
 import { sequelize } from "./src/models/index";
 import "module-alias/register";

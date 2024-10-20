@@ -1,10 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "jest",
     "start": "node index.js",
+    "build": "tsc",
     "dev": "nodemon --exec ts-node ./index.ts"
   },
   "author": "",
