@@ -19,19 +19,19 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 
 ## Installation
 
-1. Clone this repo.
+### 1. Clone this repo.
 
 ```git clone https://github.com/SaraSuriya/atomize-pro.git```
 
 ```cd atomize-pro```
 
-2. Install dependencies in the client folder.
+### 2. Install dependencies in the client folder.
 
 ```cd client```
 
 ```npm i```
 
-3. Install dependencies in the server.
+### 3. Install dependencies in the server.
 
 ```..```
 
@@ -39,19 +39,19 @@ Interact with an interface that is pleasant to navigate and look at. Life is not
 
 ```npm i```
 
-4. Create an .env file and fill out the following.
+### 4. Create an .env file and fill out the following.
 
-```PSQL_DATABASE=database-name-here
-PSQL_USER=name-here
-PASSWORD=password-here
-PORT=3000```
+```PSQL_DATABASE=database-name-here```
+```PSQL_USER=name-here```
+```PASSWORD=password-here```
+```PORT=3000```
 
-5. Connect to the database.
+### 5. Connect to the database.
 
-6. Run the server.
+### 6. Run the server.
 
 ```npm run dev```
 
-7. Run the client.
+### 7. Run the client.
 
 ```npm run dev```
