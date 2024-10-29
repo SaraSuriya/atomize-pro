@@ -4,7 +4,7 @@ Atomize Productivity (also known as 'Atomize Pro') is a productivity app designe
  
 The front-end is built with vanilla Javascript, CSS, and React. On the back-end, Express keeps the server afloat and a PostGreSQL database holds all the user's stored data and preferences.
 
-## A Note on Atomize Pro.
+#### Please Note:
 
 This repo contains the 'first draft' of Atomize Pro. as the app is currently being upgraded and "levelled up" with a MongoDB database and significantly improved functionalities. When this next phase is complete, I will be making that repo public.
 
